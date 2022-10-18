@@ -1,0 +1,13 @@
+#N canvas 697 110 345 175 10;
+#X obj 33 115 dac~;
+#X floatatom 92 37 5 0 0 0 - - - 0;
+#X obj 43 37 adc~;
+#X floatatom 142 57 5 0 0 0 - - - 0;
+#X text 131 36 transposition in semitones;
+#X text 178 56 window size in secs.;
+#X obj 43 80 pitchshift~ 1 0.1;
+#X connect 1 0 6 1;
+#X connect 2 0 6 0;
+#X connect 3 0 6 2;
+#X connect 6 0 0 0;
+#X connect 6 0 0 1;
